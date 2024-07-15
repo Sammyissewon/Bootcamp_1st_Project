@@ -4,10 +4,11 @@ import AuthorInfo from "./AuthorInfo";
 import Latest from "./Latest";
 import Review from "./Review";
 import asideImg from "../../assets/aside-img.webp";
+import "./NewsDetail.css";
 
 const NewsDetail = () => {
   return (
-    <>
+    <div className="news-detail-wrapper">
       <div className="news-detail">
         <NewsInfo />
         <AuthorInfo />
@@ -17,7 +18,7 @@ const NewsDetail = () => {
       <div className="news-detail-aside">
         <img src={asideImg} alt="aside-img" />
       </div>
-    </>
+    </div>
   );
 };
 

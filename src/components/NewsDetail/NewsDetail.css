@@ -1,0 +1,32 @@
+/***************************************
+ *	임시
+ */
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.news-detail-wrapper {
+  width: 55%;
+  margin: 10% auto;
+  /* border: 1px solid #ff0000; */
+}
+
+/***************************************
+ *	상세페이지 전체
+ */
+.news-detail-wrapper {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.news-detail {
+  width: 60%;
+}
+
+.news-detail-aside {
+  width: 25%;
+  padding-right: 3%;
+}
