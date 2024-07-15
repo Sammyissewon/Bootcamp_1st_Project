@@ -6,8 +6,8 @@ const Header = () => {
     <div className={classes.title}>
       <img src="icon/wixblog.svg" alt="wixblog" />
       <div>
-        <button>구독하기</button>
-        <button>웹사이트 제작하기</button>
+        <button className={classes.subscribeButton}>구독하기</button>
+        <button className={classes.produceButton}>웹사이트 제작하기</button>
       </div>
     </div>
   );
