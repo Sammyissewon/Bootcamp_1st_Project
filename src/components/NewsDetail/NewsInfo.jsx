@@ -1,11 +1,12 @@
 import React from "react";
 import Share from "./Share";
 import shareImg from "../../assets/share.svg";
+import "./NewsInfo.css";
 
 const NewsInfo = () => {
   return (
-    <section className="news-info">
-      <div>
+    <section className="news-info-wrapper">
+      <div className="news-info">
         <div className="news-date">2024-07-15T00:16:32Z</div>
         <div className="share-btn">
           <img src={shareImg} alt="share-btn" />
