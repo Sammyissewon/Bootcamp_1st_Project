@@ -1,3 +1,4 @@
+/* Main */
 .upper-side {
   display: flex;
   justify-content: space-between;
@@ -10,13 +11,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  flex: 1;
+  padding-right: 100px;
+  height: 500px;
 }
 
 .main-article {
-  display: flex;
+  margin-top: 5px;
+  align-self: flex-start;
   font-size: 35px;
-  justify-content: space-between;
 }
 
 .detail-button {
@@ -27,14 +29,30 @@
 }
 
 .main-img {
-  flex: 1;
-  max-width: 60%;
   display: flex;
-  justify-content: flex-end;
+  max-width: 60%;
 }
 
-.lower-side {
+.line {
+  border-bottom: 1px solid #000;
+  width: 400px;
+  align-self: flex-end;
+  padding-left: 50px;
+}
+
+/* Section */
+.section-header {
   display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.section-title {
+  font-size: 50px;
+}
+
+.section-text {
+  font-size: 20px;
 }
 
 /* Item CSS */
@@ -42,7 +60,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 
 .itemCard {
@@ -64,7 +82,7 @@
 /* 미디어 쿼리 */
 @media (min-width: 1200px) {
   .grid-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr); /* 최대 5개의 열 */
   }
 }
 

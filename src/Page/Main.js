@@ -1,6 +1,10 @@
 import React from "react";
 
-import ItemList from "../Components/ItemList";
+// components
+import MainItemList from "./MainItemList";
+import Pagination from "../Components/Pagination";
+
+// assets
 import mainImg from "../assets/main-img.png";
 
 const Main = () => {
@@ -13,13 +17,12 @@ const Main = () => {
           </h4>
           <button className="detail-button">자세히 보기 ></button>
         </div>
-
         <img src={mainImg} className="main-img"></img>
       </section>
+      <div className="line"></div>
 
-      <section className="lower-side">
-        <ItemList />
-      </section>
+      <MainItemList className="main-item-list" />
+      <Pagination />
     </div>
   );
 };
