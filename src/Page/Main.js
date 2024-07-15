@@ -1,6 +1,6 @@
 import React from "react";
 
-import ItemList from "./ItemList";
+import ItemList from "../Components/ItemList";
 import mainImg from "../assets/main-img.png";
 
 const Main = () => {
