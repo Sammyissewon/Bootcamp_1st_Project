@@ -1,22 +1,39 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
 // components
 import Item from "../Components/Item"; // Item 컴포넌트를 불러옴
 
-const items = Array.from({ length: 20 }); // 16개의 항목 생성
-
 const MainItemList = () => {
   // 뉴스 API 불러오기
+  // 불러온 기사 State 보관
   const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${
-      import.meta.env.REACT_APP_API_KEY
-    }`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`;
+
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => setArticles(data.articles));
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setArticles(data.articles);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+      });
   }, []);
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <>

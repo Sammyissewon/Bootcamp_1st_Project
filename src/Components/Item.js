@@ -1,12 +1,10 @@
-import mockImg from "../assets/mock-img.jpg";
-
-const Item = () => {
+const Item = ({ src, date, title, url }) => {
   return (
     <div className="itemCard">
-      <img className="itemCard-img" src={mockImg} alt="item" />
+      <img className="itemCard-img" src={src} alt="item" />
       <div>
-        <div className="uploadedDate">4일 전 1분</div>
-        <div className="itemTitle">HTML 뜻과 HTML 웹사이트 만들기</div>
+        <div className="uploadedDate">{date}</div>
+        <h5 className="itemTitle">{title}</h5>
       </div>
     </div>
   );
