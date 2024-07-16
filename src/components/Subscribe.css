@@ -1,12 +1,8 @@
-
-
 .Subscribe {
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: rgb(27,122,98);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-left: 28rem;
+    padding-top: 11rem;
 }
 
 .head {
@@ -38,12 +34,12 @@
 
 .email-input{
     width: 22rem;
-    height: 2.6rem;
+    height: 2.5rem;
     font-size: 1rem;
     background-color: transparent; /* 배경색을 투명으로 */
     color: white; /* 텍스트 색상을 하얀색으로 */
     border: 1px solid white;
-    margin-right: 1rem;
+    margin-right: 0.7rem;
     margin-left: 1rem;
     margin-bottom: 2.2rem;
 }
@@ -64,4 +60,15 @@
 }
 .email-input::placeholder {
     color: white; /* placeholder 텍스트 색상을 하얀색으로 */
+}
+
+.size-6{
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
 }
