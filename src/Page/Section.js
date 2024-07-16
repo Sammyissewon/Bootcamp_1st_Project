@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Section.module.css";
 
 // components
 import MainItemList from "./MainItemList";
@@ -7,7 +8,7 @@ import Pagination from "../Components/Pagination";
 const Section = () => {
   return (
     <>
-      <MainItemList className="main-item-list" />
+      <MainItemList className={styles.mainItemList} />
       <Pagination />
     </>
   );

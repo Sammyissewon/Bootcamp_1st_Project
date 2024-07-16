@@ -1,0 +1,36 @@
+.upperSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding-right: 100px;
+  height: 500px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-right: 100px;
+}
+
+.mainArticle {
+  margin-top: 5px;
+  align-self: flex-start;
+  font-size: 35px;
+}
+
+.detailButton {
+  color: grey;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+}
+
+.mainImg {
+  display: flex;
+  max-width: 60%;
+}

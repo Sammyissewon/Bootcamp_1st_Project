@@ -1,27 +1,29 @@
 import React from "react";
+import styles from "./Main.module.css";
 
 // components
 import MainItemList from "./MainItemList";
 import Pagination from "../Components/Pagination";
 
-// assets
-import mainImg from "../assets/main-img.png";
-
 const Main = () => {
   return (
     <div>
-      <section className="upper-side">
-        <div className="left-side">
-          <h4 className="main-article">
+      <section className={styles.upperSide}>
+        <div className={styles.leftSide}>
+          <h4 className={styles.mainArticle}>
             꼭 알아두어야 할 모바일 웹 디자인 사례 16가지
           </h4>
-          <button className="detail-button">자세히 보기 ></button>
+          <button className={styles.detailButton}>자세히 보기 </button>
         </div>
-        <img src={mainImg} className="main-img"></img>
+        <img
+          src="assets/main.png"
+          className={styles.mainImg}
+          alt="main img"
+        ></img>
       </section>
       <div className="line"></div>
 
-      <MainItemList className="main-item-list" />
+      <MainItemList className={styles.mainItemList} />
       <Pagination />
     </div>
   );

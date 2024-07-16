@@ -1,10 +1,12 @@
+import styles from "./Item.module.css";
+
 const Item = ({ src, date, title, url }) => {
   return (
-    <div className="itemCard">
-      <img className="itemCard-img" src={src} alt="item" />
-      <div className="itemInfo">
-        <div className="uploadedDate">{date}</div>
-        <h5 className="itemTitle">{title}</h5>
+    <div className={styles.itemCard}>
+      <img className={styles.itemCardImg} src={src} alt="item" />
+      <div className={styles.itemInfo}>
+        <div className={styles.uploadedDate}>{date}</div>
+        <h5 className={styles.itemTitle}>{title}</h5>
       </div>
     </div>
   );
