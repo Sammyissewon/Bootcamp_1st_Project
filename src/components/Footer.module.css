@@ -1,10 +1,51 @@
 .listBox {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   border: 1px solid gainsboro;
 }
 
 .list {
   list-style: none;
+  margin: 50px 30px;
+}
+
+.listTitle {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.list li {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.wixBox {
+  width: 16rem;
+  margin: 50px 0;
+}
+
+.wixBox p {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wixBox div {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px;
+}
+
+.iconBox img {
+  margin-left: 20px;
+}
+
+.iconBox span {
+  margin-left: 40px;
 }
