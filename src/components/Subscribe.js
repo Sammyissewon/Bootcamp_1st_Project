@@ -26,13 +26,13 @@ const Subscribe = () => {
             <form onSubmit={handleSubmit} className='form-container'>
         <input
           type='email'
-          placeholder='이메일 주소'
+          placeholder=' 이메일 주소를 입력해 주세요'
           className='email-input'
           value={email}
           onChange={handleInputChange}
           required
         />
-        <button type='submit' className='subscribe-button'>구독하기</button>
+        <button type='submit' className='subscribe-btn'>구독 신청</button>
       </form>
         </div>
     );
