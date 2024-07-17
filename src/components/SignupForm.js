@@ -14,32 +14,42 @@ const SignupForm = () => {
 
   return (
     <form className="signup-form" onSubmit={handleSubmit}>
-      <h2>비밀번호 생성</h2>
       <div className="form-group">
-        <label htmlFor="email">이메일</label>
         <input
           type="email"
-          id="email"
+          placeholder="이메일"
+          className="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        </div>
+
+        <div className="form-group">
+        <input
+          type="email"
+          placeholder="이메일 인증"
+          className="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
       </div>
       <div className="form-group">
-        <label htmlFor="password">비밀번호</label>
         <input
           type="password"
-          id="password"
+          placeholder="비밀번호 선택"
+          className="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
       </div>
       <div className="form-group">
-        <label htmlFor="confirm-password">비밀번호 확인</label>
         <input
           type="password"
-          id="confirm-password"
+          placeholder="비밀번호 확인"
+          className="password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
           required
