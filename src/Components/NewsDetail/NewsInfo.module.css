@@ -1,13 +1,13 @@
 /***************************************
  *	뉴스영역 전체
  */
-.news_info_wrapper {
+.newsInfoWrapper {
   padding: 0 5%;
 }
 /***************************************
  *	날짜
  */
-.news_info {
+.newsInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,30 +17,31 @@
 /***************************************
  *	공유 버튼
  */
-.share_btn {
+.shareBtn {
   width: 19px;
   height: 19px;
 }
 
-.news_info .share_btns {
+.newsInfo .share_btns {
   display: none;
 }
 
 /***************************************
  *	제목
  */
-.news_title {
+.newsTitle {
   font-size: 40px;
   font-weight: bold;
-  margin-top: 4%;
-  margin-bottom: 12%;
+  margin-top: 5%;
+  margin-bottom: 13%;
+  line-height: 1.2;
 }
 
 /***************************************
  *	내용
  */
-.news_con {
+.newsCon {
   font-size: 23px;
-  line-height: 1.5;
+  line-height: 1.7;
   margin: 8% 0;
 }

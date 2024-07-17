@@ -1,7 +1,7 @@
 /***************************************
  *	작성자 영역 전체
  */
-.author_info {
+.authorInfo {
   padding: 0 5%;
 }
 /***************************************
@@ -17,7 +17,7 @@
 /***************************************
  *	작성자 이미지
  */
-.author_img {
+.authorImg {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -27,7 +27,7 @@
 /***************************************
  *	작성자명
  */
-.author_name {
+.authorName {
   font-size: 18px;
   font-weight: bold;
   margin-top: 1.5%;
@@ -36,7 +36,7 @@
 /***************************************
  *	공유버튼
  */
-.author_shortcut {
+.authorShortcut {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ccc;
@@ -46,6 +46,6 @@
 /***************************************
  *	카테고리 바로가기
  */
-.category_shortcut {
+.categoryShortcut {
   font-size: 14px;
 }
