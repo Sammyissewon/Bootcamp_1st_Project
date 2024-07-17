@@ -1,9 +1,9 @@
 import React from "react";
 // import { useState, useEffect } from "react";
 import { useEffect } from "react";
-import styles from "./MainItemList.module.css";
+import classes from "./MainItemList.module.css";
 // components
-import Item from "../components/sw/Item"; // Item 컴포넌트를 불러옴
+import Item from "../Components/sw/Item"; // Item 컴포넌트를 불러옴
 
 import { useDispatch } from "react-redux";
 import { setNews } from "../store/news-data";
@@ -51,7 +51,7 @@ const MainItemList = () => {
 
   return (
     <>
-      <div className={styles.gridContainer}>
+      <div className={classes.gridContainer}>
         <Item />
         {/* {articles.map((news, index) => {
           return (
