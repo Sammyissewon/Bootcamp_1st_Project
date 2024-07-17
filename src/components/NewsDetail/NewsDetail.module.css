@@ -6,27 +6,24 @@ body {
   overflow-x: hidden;
 }
 
-.news-detail-wrapper {
-  width: 55%;
-  margin: 10% auto;
-  /* border: 1px solid #ff0000; */
-}
-
 /***************************************
  *	상세페이지 전체
  */
-.news-detail-wrapper {
+.news_detail_wrapper {
+  width: 55%;
+  margin: 10% auto;
+  /* border: 1px solid #ff0000; */
   padding: 3% 0;
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 
-.news-detail {
+.news_detail {
   width: 60%;
 }
 
-.news-detail-aside {
+.news_detail_aside {
   width: 25%;
   padding-right: 3%;
 }

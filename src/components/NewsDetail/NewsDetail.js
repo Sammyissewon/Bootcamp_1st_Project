@@ -3,18 +3,18 @@ import NewsInfo from "./NewsInfo";
 import AuthorInfo from "./AuthorInfo";
 import Latest from "./Latest";
 import Review from "./Review";
-import "./NewsDetail.css";
+import classes from "./NewsDetail.module.css";
 
 const NewsDetail = () => {
   return (
-    <div className="news-detail-wrapper">
-      <div className="news-detail">
+    <div className={classes.news_detail_wrapper}>
+      <div className={classes.news_detail}>
         <NewsInfo />
         <AuthorInfo />
         <Latest />
         <Review />
       </div>
-      <div className="news-detail-aside">
+      <div className={classes.news_detail_aside}>
         <img src="../assets/aside-img.webp" alt="aside-img" />
       </div>
     </div>

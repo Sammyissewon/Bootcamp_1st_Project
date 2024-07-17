@@ -9,14 +9,14 @@
 /***************************************
  *	댓글 영역 전체
  */
-.review-title {
+.review_title {
   font-size: 18px;
   font-weight: bold;
   padding: 3% 0;
   border-bottom: 1px solid #ccc;
 }
 
-.review-input-wrapper {
+.review_input_wrapper {
   border: 1px solid #b2b2b2;
   width: 100%;
   margin-top: 5%;

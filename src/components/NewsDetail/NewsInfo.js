@@ -1,6 +1,6 @@
 import React from "react";
 import Share from "./Share";
-import "./NewsInfo.css";
+import classes from "./NewsInfo.module.css";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -22,19 +22,19 @@ const NewsInfo = () => {
   }
 
   return (
-    <section className="news-info-wrapper">
-      <div className="news-info">
-        <div className="news-date">{article.publishedAt}</div>
-        <div className="share-btn">
+    <section className={classes.news_info_wrapper}>
+      <div className={classes.news_info}>
+        <div className={classes.news_date}>{article.publishedAt}</div>
+        <div className={classes.share_btn}>
           <img src="../assets/share.svg" alt="share-btn" />
           <Share />
         </div>
       </div>
-      <div className="news-title">{article.title}</div>
-      <div className="news-thumb">
+      <div className={classes.news_title}>{article.title}</div>
+      <div className={classes.news_thumb}>
         <img src={article.urlToImage} alt={article.title} />
       </div>
-      <div className="news-con">
+      <div className={classes.news_con}>
         <p>{article.description}</p>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React from "react";
 import Share from "./Share";
-import "./AuthorInfo.css";
+import classes from "./AuthorInfo.module.css";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -14,16 +14,16 @@ const AuthorInfo = () => {
   }
 
   return (
-    <section className="author-info">
-      <div className="author">
-        <div className="author-img">
+    <section className={classes.autho_info}>
+      <div className={classes.author}>
+        <div className={classes.author_img}>
           <img src="../assets/author-img.webp" alt="author-img" />
         </div>
-        <div className="author-name">By {article.author}</div>
+        <div className={classes.author_name}>By {article.author}</div>
       </div>
-      <div className="author-shortcut">
+      <div className={classes.author_shortcut}>
         <Share />
-        <div className="category-shortcut">
+        <div className={classes.category_shortcut}>
           <a href="/">카테고리명</a>
         </div>
       </div>

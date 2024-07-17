@@ -1,5 +1,5 @@
 import React from "react";
-import "./Latest.css";
+import classes from "./Latest.module.css";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -15,8 +15,8 @@ const Latest = () => {
   }
 
   return (
-    <section className="latest-wrapper">
-      <div className="latest">
+    <section className={classes.latest_wrapper}>
+      <div className={classes.latest}>
         <div>최근 게시물</div>
         <a href="/">전체 보기</a>
       </div>
@@ -25,11 +25,11 @@ const Latest = () => {
       {id !== "0" && latestArticle ? (
         <>
           <Link to="/news/0">
-            <div className="latest-thumb">
+            <div className={classes.latest_thumb}>
               <img src={latestArticle.urlToImage} alt={latestArticle.title} />
             </div>
           </Link>
-          <div className="latest-title">
+          <div className={classes.latest_title}>
             <Link to="/news/0">
               <div>{latestArticle.title}</div>
             </Link>
@@ -40,11 +40,11 @@ const Latest = () => {
         // 최근게시물에 두번째 게시물 띄우기
         <>
           <Link to="/news/1">
-            <div className="latest-thumb">
+            <div className={classes.latest_thumb}>
               <img src={secondArticle.urlToImage} alt={secondArticle.title} />
             </div>
           </Link>
-          <div className="latest-title">
+          <div className={classes.latest_title}>
             <Link to="/news/1">
               <div>{latestArticle.title}</div>
             </Link>
