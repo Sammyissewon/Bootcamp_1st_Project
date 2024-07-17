@@ -48,9 +48,12 @@ const MainItemList = () => {
             <Item
               key={index}
               title={news.title}
-              src={news.urlToImage}
-              date={news.publishedAt}
-              url={news.url}
+              src={news.urlToImage} // 이미지
+              date={news.publishedAt} // 출간일자
+              author={news.author} // 글쓴이
+              source={news.source.name} // 언론사
+              content={news.content} // 컨텐츠
+              url={news.url} // URL
             />
           );
         })}
