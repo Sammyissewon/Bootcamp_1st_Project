@@ -1,0 +1,75 @@
+.Subscribe {
+    min-height: 120vh;
+    background-color: rgb(27,122,98);
+    padding-left: 28rem;
+    padding-top: 11rem;
+}
+
+.head {
+    padding-top: 2rem;
+    padding-right: 4rem;
+    font-size: 3rem;
+    font-weight: 650;
+    color: white;
+}
+
+.sub{
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    padding-right: 5rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+}
+
+.subscribe-btn {
+    font-size: 1rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    color:  rgb(27,122,98);
+    border: none;
+    width: 7.3rem;
+    height: 2.6rem;
+}
+
+.email-input{
+    width: 22rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: transparent; /* 배경색을 투명으로 */
+    color: white; /* 텍스트 색상을 하얀색으로 */
+    border: 1px solid white;
+    margin-right: 0.7rem;
+    margin-left: 1rem;
+    margin-bottom: 2.2rem;
+}
+
+
+/* placeholder 텍스트 스타일 */
+.email-input::-webkit-input-placeholder {
+    color: white; /* placeholder 텍스트 색상을 하얀색으로 */
+}
+.email-input::-moz-placeholder {
+    color: white; /* placeholder 텍스트 색상을 하얀색으로 */
+}
+.email-input:-ms-input-placeholder {
+    color: white; /* placeholder 텍스트 색상을 하얀색으로 */
+}
+.email-input::-ms-input-placeholder {
+    color: white; /* placeholder 텍스트 색상을 하얀색으로 */
+}
+.email-input::placeholder {
+    color: white; /* placeholder 텍스트 색상을 하얀색으로 */
+}
+
+.size-6{
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
