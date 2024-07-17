@@ -1,18 +1,18 @@
 .header {
-    text-align: center;
-    padding-top: 5rem;
-    font-size: 3.5rem;
-    font-weight: bold;
-  }
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
 .message {
-    font-size: 1.1rem;
-    text-align: center;
-    padding-bottom: 0;
-    padding-top: 0.25rem;
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 0;
+  padding-top: 0.25rem;
 }
 
 .login {
-    color: #007bff; /* 파란색으로 텍스트 색상 설정 */
-    cursor: pointer; /* 클릭 가능하도록 커서 변경 */
-    /*text-decoration: underline;  밑줄 추가, 필요에 따라 제거 가능 */
+  color: #007bff; /* 파란색으로 텍스트 색상 설정 */
+  cursor: pointer; /* 클릭 가능하도록 커서 변경 */
+  /*text-decoration: underline;  밑줄 추가, 필요에 따라 제거 가능 */
 }

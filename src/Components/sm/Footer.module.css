@@ -6,7 +6,7 @@
 
 .list {
   list-style: none;
-  margin: 50px 30px;
+  margin: 50px 50px;
 }
 
 .listTitle {
@@ -22,6 +22,7 @@
 .wixBox {
   width: 16rem;
   margin: 50px 0;
+  margin-left: 30px;
 }
 
 .wixBox p {
