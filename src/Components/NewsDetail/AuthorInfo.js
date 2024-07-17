@@ -14,16 +14,16 @@ const AuthorInfo = () => {
   }
 
   return (
-    <section className={classes.authoInfo}>
+    <section className={classes.authorInfo}>
       <div className={classes.author}>
-        <div className={classes.author_img}>
+        <div className={classes.authorImg}>
           <img src="../assets/author-img.webp" alt="author-img" />
         </div>
-        <div className={classes.author_name}>By {article.author}</div>
+        <div className={classes.authorName}>By {article.author}</div>
       </div>
-      <div className={classes.author_shortcut}>
+      <div className={classes.authorShortcut}>
         <Share />
-        <div className={classes.category_shortcut}>
+        <div className={classes.categoryShortcut}>
           <a href="/">카테고리명</a>
         </div>
       </div>
