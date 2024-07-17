@@ -1,16 +1,27 @@
+import React from "react";
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Modal from "./components/Modal";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./Components/sm/Header";
+import Main from "./Page/Main";
+import NewsDetail from "./Components/NewsDetail/NewsDetail";
+import Section from "./Page/Section";
+import Subscribe from "./Components/hb/Subscribe";
+import Footer from "./Components/sm/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <BrowserRouter>
+      {/* 꼭 Router 안에 선언해줘야함 */}
       <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/news" element={<NewsDetail />} />
+        <Route path="/Section" element={<Section />} />
+        <Route path="/Subscribe" element={<Subscribe />} />
+      </Routes>
       <Footer />
-      <Modal />
-    </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
