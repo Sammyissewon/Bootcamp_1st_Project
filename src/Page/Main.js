@@ -1,11 +1,19 @@
 import React from "react";
 import styles from "./Main.module.css";
+import { useState } from "react";
 
 // components
 import MainItemList from "./MainItemList";
 import Pagination from "../Components/Pagination";
 
 const Main = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 5;
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <div>
       <section className={styles.upperSide}>
@@ -16,7 +24,7 @@ const Main = () => {
           <button className={styles.detailButton}>자세히 보기 </button>
         </div>
         <img
-          src="assets/main.png"
+          src="assets/main2.png"
           className={styles.mainImg}
           alt="main img"
         ></img>
@@ -24,7 +32,18 @@ const Main = () => {
       <div className="line"></div>
 
       <MainItemList className={styles.mainItemList} />
-      <Pagination />
+      <Pagination
+        totalPages={totalPages}
+        currentPage={currentPage}
+        onPageChange={handlePageChange}
+      />
+
+      <div className={styles.mainBottomText}>
+        <p>
+          본 블로그는 <span className={styles.customBold}>Wix Blog</span>로
+          제작되었습니다.
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styles from "./Pagination.module.css";
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
@@ -43,25 +42,5 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
     </div>
   );
 };
-
-// const App = () => {
-//   const [currentPage, setCurrentPage] = useState(1);
-//   const totalPages = 5;
-
-//   const handlePageChange = (pageNumber) => {
-//     setCurrentPage(pageNumber);
-//   };
-
-//   return (
-//     <div>
-//       <h1>Page {currentPage}</h1>
-//       <Pagination
-//         totalPages={totalPages}
-//         currentPage={currentPage}
-//         onPageChange={handlePageChange}
-//       />
-//     </div>
-//   );
-// };
 
 export default Pagination;
