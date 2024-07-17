@@ -1,4 +1,4 @@
-import classes from "./Pagination.module.css";
+import styles from "./Pagination.module.css";
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   const pageNumbers = [];
@@ -8,7 +8,7 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   }
 
   return (
-    <div className={classes.pagination}>
+    <div className={styles.pagination}>
       <button onClick={() => onPageChange(1)} disabled={currentPage === 1}>
         «
       </button>

@@ -7,9 +7,6 @@
   color: white;
   padding: 40px;
   /* position: fixed; */
-  /* text-align: center; */
-  /* transition: transform 0.3s ease-in-out; */
-  /* transform: translateY(100%); */
 }
 
 .modal span {
@@ -29,8 +26,4 @@
 
 .modal img {
   width: 25px;
-}
-
-.modal.show {
-  transform: translateY(0);
 }

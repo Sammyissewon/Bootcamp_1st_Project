@@ -1,13 +1,20 @@
 import React from "react";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import classes from "./MainItemList.module.css";
 // components
 import Item from "../Components/sw/Item"; // Item 컴포넌트를 불러옴
 
+import { useDispatch } from "react-redux";
+import { setNews } from "../store/news-data";
+
 const MainItemList = () => {
   // 뉴스 API 불러오기
   // 불러온 기사 State 보관
-  const [articles, setArticles] = useState([]);
+  // const [articles, setArticles] = useState([]);
+  // 데이터를 받아야할 곳에 사용
+  // action과 관련된 값을 인자로 넣어서 보내줌
+  const dispatch = useDispatch();
 
   // 시간표시 형식
   const formatDate = (isoString) => {
@@ -35,14 +42,18 @@ const MainItemList = () => {
           ...article,
           publishedAt: formatDate(article.publishedAt),
         }));
-        setArticles(formattedArticles);
+        // setArticles(formattedArticles);
+        // dispatch(setNews(data.articles)
+        dispatch(setNews(formattedArticles));
       });
-  }, []);
+    // }, []);
+  }, [dispatch]);
 
   return (
     <>
       <div className={classes.gridContainer}>
-        {articles.map((news, index) => {
+        <Item />
+        {/* {articles.map((news, index) => {
           return (
             // fetch 해온 source의 Key값을 활용하여, Props로 전달
             <Item
@@ -53,7 +64,7 @@ const MainItemList = () => {
               url={news.url}
             />
           );
-        })}
+        })} */}
       </div>
     </>
   );

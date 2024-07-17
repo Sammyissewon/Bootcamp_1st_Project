@@ -1,10 +1,10 @@
 import React from "react";
-import classes from "./Main.module.css";
+import styles from "./Main.module.css";
 import { useState } from "react";
 
 // components
 import MainItemList from "./MainItemList";
-import Pagination from "../Components/sw/Pagination";
+import Pagination from "../components/sw/Pagination";
 
 const Main = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -16,30 +16,30 @@ const Main = () => {
 
   return (
     <div>
-      <div className={classes.upperSide}>
-        <div className={classes.leftSide}>
-          <h4 className={classes.mainArticle}>
+      <div className={styles.upperSide}>
+        <div className={styles.leftSide}>
+          <h4 className={styles.mainArticle}>
             꼭 알아두어야 할 모바일 웹 디자인 사례 16가지
           </h4>
-          <button className={classes.detailButton}>자세히 보기 </button>
+          <button className={styles.detailButton}>자세히 보기 </button>
         </div>
         <img
           src="assets/main2.png"
-          className={classes.mainImg}
+          className={styles.mainImg}
           alt="main img"
         ></img>
       </div>
 
-      <MainItemList className={classes.mainItemList} />
+      <MainItemList className={styles.mainItemList} />
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}
         onPageChange={handlePageChange}
       />
 
-      <div className={classes.mainBottomText}>
+      <div className={styles.mainBottomText}>
         <p>
-          본 블로그는 <span className={classes.customBold}>Wix Blog</span>로
+          본 블로그는 <span className={styles.customBold}>Wix Blog</span>로
           제작되었습니다.
         </p>
       </div>

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "./SignupForm.module.css";
+import React, { useState } from 'react';
+import './SignupForm.module.css';
 
 const SignupForm = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,9 +23,9 @@ const SignupForm = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-      </div>
+        </div>
 
-      <div className="form-group">
+        <div className="form-group">
         <input
           type="email"
           placeholder="이메일 인증"
@@ -55,9 +55,7 @@ const SignupForm = () => {
           required
         />
       </div>
-      <button type="submit" className="submit-button">
-        가입하기
-      </button>
+      <button type="submit" className="submit-button">가입하기</button>
     </form>
   );
 };
