@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import styles from "./MainItemList.module.css";
 // components
-import Item from "../components/sw/Item"; // Item 컴포넌트를 불러옴
+import Item from "../Components/sw/Item"; // Item 컴포넌트를 불러옴
 
 const MainItemList = () => {
   // 뉴스 API 불러오기
