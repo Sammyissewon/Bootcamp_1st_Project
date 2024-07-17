@@ -1,18 +1,16 @@
-import React from 'react';
-import Subscribe from './components/Subscribe';
-import Login from './components/Login';
-import Header from './components/Header';
-import SignupForm from './components/SignupForm';
-import Footer from './components/Footer';
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Modal from "./components/Modal";
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <SignupForm />
       <Footer />
+      <Modal />
     </div>
   );
-};
+}
 
 export default App;
