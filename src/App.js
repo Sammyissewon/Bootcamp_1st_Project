@@ -8,6 +8,7 @@ import Section from "./Page/Section";
 import Subscribe from "./Components/hb/Subscribe";
 import SignupForm from "./Components/hb/SignupForm";
 import Footer from "./Components/sm/Footer";
+import Modal from "./Components/sm/Modal";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/SignupForm" element={<SignupForm />} />
       </Routes>
       <Footer />
+      <Modal />
     </BrowserRouter>
   );
 };
