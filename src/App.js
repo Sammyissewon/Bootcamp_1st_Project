@@ -31,20 +31,3 @@ export default App;
 // };
 
 // export default App;
-
-// import "./App.css";
-// import Footer2 from "./components/Footer2";
-// import Header2 from "./components/Header2";
-// import SignupForm from "./components/SignupForm";
-
-// function App() {
-//   return (
-//     <div>
-//       <Header2 />
-//       <Footer2 />
-//       <SignupForm />
-//     </div>
-//   );
-// }
-
-// export default App;
