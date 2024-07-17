@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Section.module.css";
+import classes from "./Section.module.css";
 import { useState } from "react";
 
 // components
@@ -16,15 +16,15 @@ const Section = () => {
 
   return (
     <>
-      <MainItemList className={styles.mainItemList} />
+      <MainItemList className={classes.mainItemList} />
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}
         onPageChange={handlePageChange}
       />
-      <div className={styles.sectionBottomText}>
+      <div className={classes.sectionBottomText}>
         <p>
-          본 블로그는 <span className={styles.customBold}>Wix Blog</span>로
+          본 블로그는 <span className={classes.customBold}>Wix Blog</span>로
           제작되었습니다.
         </p>
       </div>

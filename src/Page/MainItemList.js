@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import styles from "./MainItemList.module.css";
+import classes from "./MainItemList.module.css";
 // components
 import Item from "../Components/sw/Item"; // Item 컴포넌트를 불러옴
 
@@ -41,7 +41,7 @@ const MainItemList = () => {
 
   return (
     <>
-      <div className={styles.gridContainer}>
+      <div className={classes.gridContainer}>
         {articles.map((news, index) => {
           return (
             // fetch 해온 source의 Key값을 활용하여, Props로 전달

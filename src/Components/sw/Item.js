@@ -1,12 +1,12 @@
-import styles from "./Item.module.css";
+import classes from "./Item.module.css";
 
 const Item = ({ src, date, title, url }) => {
   return (
-    <div className={styles.itemCard}>
-      <img className={styles.itemCardImg} src={src} alt="item" />
-      <div className={styles.itemInfo}>
-        <div className={styles.uploadedDate}>{date}</div>
-        <h5 className={styles.itemTitle}>{title}</h5>
+    <div className={classes.itemCard}>
+      <img className={classes.itemCardImg} src={src} alt="item" />
+      <div className={classes.itemInfo}>
+        <div className={classes.uploadedDate}>{date}</div>
+        <h5 className={classes.itemTitle}>{title}</h5>
       </div>
     </div>
   );
