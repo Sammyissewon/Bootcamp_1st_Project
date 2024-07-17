@@ -1,9 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Modal from "./components/Modal";
 
 function App() {
   return (
-   <div>123</div>
+    <div>
+      <Header />
+      <Footer />
+      <Modal />
+    </div>
   );
 }
 
