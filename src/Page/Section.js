@@ -4,7 +4,7 @@ import { useState } from "react";
 
 // components
 import MainItemList from "./MainItemList";
-import Pagination from "../Components/Pagination";
+import Pagination from "../components/sw/Pagination";
 
 const Section = () => {
   const [currentPage, setCurrentPage] = useState(1);
