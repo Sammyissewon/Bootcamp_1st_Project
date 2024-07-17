@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Subscribe.module.css";
+import classes from "./Subscribe.module.css";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -17,7 +17,7 @@ const Subscribe = () => {
   };
 
   return (
-    <div className="Subscribe">
+    <div className={classes.subscribe}>
       <div className="head">
         Wix 블로그
         <br />
@@ -28,7 +28,7 @@ const Subscribe = () => {
         <br />
         츠를 메일로 편하게 받아보실 수 있습니다.
       </div>
-      <form onSubmit={handleSubmit} className="form-container">
+      <form onSubmit={handleSubmit} className="formContainer">
         <input
           type="email"
           placeholder=" 이메일 주소를 입력해 주세요"
@@ -41,20 +41,7 @@ const Subscribe = () => {
           구독 신청
         </button>
       </form>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-6"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M6 18 18 6M6 6l12 12"
-        />
-      </svg>
+      <img src="icon/delete.svg" alt="" className={classes.delete} />
     </div>
   );
 };

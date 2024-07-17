@@ -65,14 +65,29 @@ const Footer = () => {
       </div>
       <div className={classes.iconBox}>
         <div>
-          <img src="/icon/facebook.svg" alt="wix" />
-          <img src="/icon/youtube.svg" alt="wix" />
-          <img src="/icon/instagram.svg" alt="wix" />
-          <img src="/icon/tiktok.svg" alt="wix" />
-          <img src="/icon/pinterest.svg" alt="wix" />
-          <img src="/icon/twitter.svg" alt="wix" />
-          <img src="/icon/linkedin.svg" alt="wix" />
+          <div>
+            <img src="/icon/facebook.svg" alt="wix" />
+          </div>
+          <div>
+            <img src="/icon/youtube.svg" alt="wix" />
+          </div>
+          <div>
+            <img src="/icon/instagram.svg" alt="wix" />
+          </div>
+          <div>
+            <img src="/icon/tiktok.svg" alt="wix" />
+          </div>
+          <div>
+            <img src="/icon/pinterest.svg" alt="wix" />
+          </div>
+          <div>
+            <img src="/icon/twitter.svg" alt="wix" />
+          </div>
+          <div>
+            <img src="/icon/linkedin.svg" alt="wix" />
+          </div>
         </div>
+
         <div>
           <span>이용약관</span>
           <span>개인정보 처리방침</span>

@@ -42,7 +42,8 @@
   padding: 35px;
 }
 
-.iconBox img {
+.iconBox div {
+  display: flex;
   margin-left: 20px;
 }
 

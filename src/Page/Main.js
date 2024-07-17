@@ -16,7 +16,7 @@ const Main = () => {
 
   return (
     <div>
-      <section className={styles.upperSide}>
+      <div className={styles.upperSide}>
         <div className={styles.leftSide}>
           <h4 className={styles.mainArticle}>
             꼭 알아두어야 할 모바일 웹 디자인 사례 16가지
@@ -28,8 +28,7 @@ const Main = () => {
           className={styles.mainImg}
           alt="main img"
         ></img>
-      </section>
-      <div className="line"></div>
+      </div>
 
       <MainItemList className={styles.mainItemList} />
       <Pagination
