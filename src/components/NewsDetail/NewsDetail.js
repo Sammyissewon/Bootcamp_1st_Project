@@ -7,15 +7,15 @@ import classes from "./NewsDetail.module.css";
 
 const NewsDetail = () => {
   return (
-    <div className={classes.news_detail_wrapper}>
-      <div className={classes.news_detail}>
+    <div className={classes.newsDetailWrapper}>
+      <div className={classes.newsDetail}>
         <NewsInfo />
         <AuthorInfo />
         <Latest />
         <Review />
       </div>
-      <div className={classes.news_detail_aside}>
-        <img src="../assets/aside-img.webp" alt="aside-img" />
+      <div className={classes.newsDetailAside}>
+        <img src="/assets/aside-img.webp" alt="aside-img" />
       </div>
     </div>
   );

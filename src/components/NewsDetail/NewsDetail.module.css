@@ -26,7 +26,7 @@ button {
 /***************************************
  *	상세페이지 전체
  */
-.news_detail_wrapper {
+.newsDetailWrapper {
   width: 55%;
   margin: 10% auto;
   /* border: 1px solid #ff0000; */
@@ -36,11 +36,11 @@ button {
   align-items: start;
 }
 
-.news_detail {
+.newsDetail {
   width: 60%;
 }
 
-.news_detail_aside {
+.newsDetailAside {
   width: 25%;
   padding-right: 3%;
 }
