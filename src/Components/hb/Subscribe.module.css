@@ -1,15 +1,16 @@
-.Subscribe {
+.subscribe {
   min-height: 120vh;
   background-color: rgb(27, 122, 98);
   padding-left: 28rem;
-  padding-top: 11rem;
+  padding-top: 1rem;
 }
 
 .head {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-right: 4rem;
-  font-size: 3rem;
-  font-weight: 650;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: 0.5rem;
   color: white;
 }
 
@@ -22,7 +23,7 @@
   color: white;
 }
 
-.subscribe-btn {
+.subscribeBtn {
   font-size: 1rem;
   background-color: #ffffff;
   cursor: pointer;
@@ -32,7 +33,7 @@
   height: 2.6rem;
 }
 
-.email-input {
+.emailInput {
   width: 22rem;
   height: 2.5rem;
   font-size: 1rem;
@@ -45,33 +46,30 @@
 }
 
 /* placeholder 텍스트 스타일 */
-.email-input::-webkit-input-placeholder {
+.emailInput::-webkit-input-placeholder {
   color: white; /* placeholder 텍스트 색상을 하얀색으로 */
 }
-.email-input::-moz-placeholder {
+.emailInput::-moz-placeholder {
   color: white; /* placeholder 텍스트 색상을 하얀색으로 */
 }
-.email-input:-ms-input-placeholder {
+.emailInput:-ms-input-placeholder {
   color: white; /* placeholder 텍스트 색상을 하얀색으로 */
 }
-.email-input::-ms-input-placeholder {
+.emailInput::-ms-input-placeholder {
   color: white; /* placeholder 텍스트 색상을 하얀색으로 */
 }
-.email-input::placeholder {
+.emailInput::placeholder {
   color: white; /* placeholder 텍스트 색상을 하얀색으로 */
 }
 
-.size-6 {
+.delete {
   color: white;
-  width: 3rem;
-  height: 3rem;
+  width: 2.7rem;
+  height: 2.7rem;
   position: fixed;
   top: 0;
   right: 0;
-  margin-top: 2rem;
-  margin-right: 2rem;
+  margin-top: 2.5rem;
+  margin-right: 2.5rem;
   cursor: pointer;
-}
-.delete {
-  width: 20px;
 }
