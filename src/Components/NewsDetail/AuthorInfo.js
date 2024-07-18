@@ -25,7 +25,7 @@ const AuthorInfo = () => {
         <Share />
         <div className={classes.categoryShortcut}>
           {article.category ? (
-            <Link to={`/category/${article.category}`}>{article.category}</Link>
+            <Link to={`/Section/${article.category}`}>{article.category}</Link>
           ) : (
             <div>카테고리 정보가 없습니다.</div>
           )}
