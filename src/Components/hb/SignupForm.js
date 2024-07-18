@@ -14,6 +14,7 @@ const SignupForm = () => {
     <>
       
         <form className={classes.signupForm} onSubmit={handleSubmit}>
+        <img src="/icon/wix.svg" alt="wix" />
           <div className={classes.header}>가입하기</div>
           <div className={classes.message}>
             이미 사용 중인 계정이 있다면{" "}
@@ -69,22 +70,19 @@ const SignupForm = () => {
           </div>
         </form>
 
-        <div className={classes.container}>
-          <div className={classes.lines}>
-            
-            <span className={classes.text}>또는</span>
-            
-          </div>
-        </div>
+        {/* <div className={classes.container}></div> */}
+        <span className={classes.text}>또는</span>
 
-        {/* <div className={classes.button}>
+        <div className={classes.lines}></div>
+
+        <div className={classes.button}>
           <button className={classes.googleBtn}>
             Google 계정으로 계속하기
           </button>
           <button className={classes.facebookBtn}>
             Facebook 계정으로 계속하기
           </button>
-        </div> */}
+        </div>
       
       <p className={classes.footer}>
         * 가입 시 Wix <span className={classes.line}>이용약관</span>에 동의하며{" "}
