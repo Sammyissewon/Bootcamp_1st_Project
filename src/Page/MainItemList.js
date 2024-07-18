@@ -42,6 +42,8 @@ const MainItemList = ({ category }) => {
         const formattedArticles = data.articles.map((article) => ({
           ...article,
           publishedAt: formatDate(article.publishedAt),
+          // 카테고리 값을 포함시킴
+          category: category,
         }));
         // setArticles(formattedArticles);
         // dispatch(setNews(data.articles)

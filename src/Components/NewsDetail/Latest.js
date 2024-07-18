@@ -26,7 +26,14 @@ const Latest = () => {
         <>
           <Link to="/news/0">
             <div className={classes.latestThumb}>
-              <img src={latestArticle.urlToImage} alt={latestArticle.title} />
+              <img
+                src={
+                  latestArticle.urlToImage
+                    ? latestArticle.urlToImage
+                    : "../assets/news-image.webp"
+                }
+                alt={latestArticle.title}
+              />
             </div>
           </Link>
           <div className={classes.latestTitle}>
@@ -41,12 +48,19 @@ const Latest = () => {
         <>
           <Link to="/news/1">
             <div className={classes.latestThumb}>
-              <img src={secondArticle.urlToImage} alt={secondArticle.title} />
+              <img
+                src={
+                  secondArticle.urlToImage
+                    ? secondArticle.urlToImage
+                    : "../assets/news-image.webp"
+                }
+                alt={secondArticle.title}
+              />
             </div>
           </Link>
-          <div className={classes.latest_title}>
+          <div className={classes.latestTitle}>
             <Link to="/news/1">
-              <div>{latestArticle.title}</div>
+              <div>{secondArticle.title}</div>
             </Link>
           </div>
         </>

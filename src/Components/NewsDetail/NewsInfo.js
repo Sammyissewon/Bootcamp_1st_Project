@@ -40,7 +40,14 @@ const NewsInfo = () => {
       </div>
       <div className={classes.newsTitle}>{article.title}</div>
       <div className={classes.newsThumb}>
-        <img src={article.urlToImage} alt={article.title} />
+        <img
+          src={
+            article.urlToImage
+              ? article.urlToImage
+              : "../assets/news-image.webp"
+          }
+          alt={article.title}
+        />
       </div>
       <div className={classes.newsCon}>
         <p>{article.description}</p>

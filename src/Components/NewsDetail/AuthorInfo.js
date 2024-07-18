@@ -1,7 +1,7 @@
 import React from "react";
 import Share from "./Share";
 import classes from "./AuthorInfo.module.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const AuthorInfo = () => {
@@ -24,7 +24,11 @@ const AuthorInfo = () => {
       <div className={classes.authorShortcut}>
         <Share />
         <div className={classes.categoryShortcut}>
-          <a href="/">카테고리명</a>
+          {article.category ? (
+            <Link to={`/category/${article.category}`}>{article.category}</Link>
+          ) : (
+            <div>카테고리 정보가 없습니다.</div>
+          )}
         </div>
       </div>
     </section>

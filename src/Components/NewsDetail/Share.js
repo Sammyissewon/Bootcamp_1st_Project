@@ -8,8 +8,6 @@ const Share = ({
   classLinkedin,
   classUrl,
 }) => {
-  console.log(classBtns, classFacebook, classX, classLinkedin, classUrl);
-
   return (
     <div className={`${classes.shareBtns} ${classBtns ? classBtns : ""}`}>
       <button
