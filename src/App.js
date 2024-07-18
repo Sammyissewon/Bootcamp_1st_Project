@@ -9,16 +9,19 @@ import Subscribe from "./Components/hb/Subscribe";
 import SignupForm from "./Components/hb/SignupForm";
 import Modal from "./Components/sm/Modal";
 import Footer from "./Components/sm/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
     <BrowserRouter>
       {/* 꼭 Router 안에 선언해줘야함 */}
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/news/:id" element={<NewsDetail />} />
-        <Route path="/Section" element={<Section />} />
+        {/* 07-18 */}
+        <Route path="/Section/:category" element={<Section />} />
         <Route path="/Subscribe" element={<Subscribe />} />
         <Route path="/SignupForm" element={<SignupForm />} />
         {/* <Route path="/Modal" element={<Modal />} /> */}

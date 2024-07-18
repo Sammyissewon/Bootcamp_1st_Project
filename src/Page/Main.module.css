@@ -34,14 +34,3 @@
 
   object-fit: cover; /* 이미지 비율을 유지하면서 크기에 맞춤 */
 }
-
-.mainBottomText {
-  display: flex;
-  justify-content: center;
-  font-size: 17px;
-  margin-top: 10px;
-}
-
-.customBold {
-  font-weight: bold;
-}

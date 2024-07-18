@@ -30,19 +30,12 @@ const Main = () => {
         ></img>
       </div>
 
-      <MainItemList className={classes.mainItemList} />
+      <MainItemList className={classes.mainItemList} category="general" />
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}
         onPageChange={handlePageChange}
       />
-
-      <div className={classes.mainBottomText}>
-        <p>
-          본 블로그는 <span className={classes.customBold}>Wix Blog</span>로
-          제작되었습니다.
-        </p>
-      </div>
     </div>
   );
 };
