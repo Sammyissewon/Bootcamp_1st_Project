@@ -34,7 +34,11 @@ const Main = () => {
               </Link>
             </div>
             <img
-              src={mainArticle.urlToImage}
+              src={
+                mainArticle.urlToImage
+                  ? mainArticle.urlToImage
+                  : "../assets/news-image.webp"
+              }
               className={classes.mainImg}
               alt="main img"
             />

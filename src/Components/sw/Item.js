@@ -5,7 +5,11 @@ const Item = ({ src, date, title, url }) => {
   return (
     <div className={classes.itemCard}>
       <Link to={url}>
-        <img className={classes.itemCardImg} src={src} alt={title} />
+        <img
+          className={classes.itemCardImg}
+          src={src ? src : "../assets/news-image.webp"}
+          alt={title}
+        />
       </Link>
       <div className={classes.itemInfo}>
         <div className={classes.uploadedDate}>{date}</div>
