@@ -10,6 +10,7 @@ import SignupForm from "./Components/hb/SignupForm";
 import Modal from "./Components/sm/Modal";
 import Footer from "./Components/sm/Footer";
 import ScrollToTop from "./ScrollToTop";
+import Login from "./Components/hb/Login";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/Section/:category" element={<Section />} />
         <Route path="/Subscribe" element={<Subscribe />} />
         <Route path="/SignupForm" element={<SignupForm />} />
+        <Route path="/Login" element={<Login />} />
         {/* <Route path="/Modal" element={<Modal />} /> */}
       </Routes>
       <Footer />
