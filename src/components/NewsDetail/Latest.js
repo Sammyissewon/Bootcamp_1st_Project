@@ -25,11 +25,11 @@ const Latest = () => {
       {id !== "0" && latestArticle ? (
         <>
           <Link to="/news/0">
-            <div className={classes.latestThumb}>
+            <div className={classes.latest_thumb}>
               <img src={latestArticle.urlToImage} alt={latestArticle.title} />
             </div>
           </Link>
-          <div className={classes.latestTitle}>
+          <div className={classes.latest_title}>
             <Link to="/news/0">
               <div>{latestArticle.title}</div>
             </Link>
