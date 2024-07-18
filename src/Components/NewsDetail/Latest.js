@@ -15,7 +15,7 @@ const Latest = () => {
   }
 
   return (
-    <section className={classes.latestWrapper}>
+    <section className={classes.latest_wrapper}>
       <div className={classes.latest}>
         <div>최근 게시물</div>
         <a href="/">전체 보기</a>
@@ -25,11 +25,11 @@ const Latest = () => {
       {id !== "0" && latestArticle ? (
         <>
           <Link to="/news/0">
-            <div className={classes.latestThumb}>
+            <div className={classes.latest_thumb}>
               <img src={latestArticle.urlToImage} alt={latestArticle.title} />
             </div>
           </Link>
-          <div className={classes.latestTitle}>
+          <div className={classes.latest_title}>
             <Link to="/news/0">
               <div>{latestArticle.title}</div>
             </Link>

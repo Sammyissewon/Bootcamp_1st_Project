@@ -22,19 +22,19 @@ const NewsInfo = () => {
   }
 
   return (
-    <section className={classes.newsInfoWrapper}>
-      <div className={classes.newsInfo}>
-        <div className={classes.newsDate}>{article.publishedAt}</div>
-        <div className={classes.shareBtn}>
+    <section className={classes.news_info_wrapper}>
+      <div className={classes.news_info}>
+        <div className={classes.news_date}>{article.publishedAt}</div>
+        <div className={classes.share_btn}>
           <img src="../assets/share.svg" alt="share-btn" />
           <Share />
         </div>
       </div>
-      <div className={classes.newsTitle}>{article.title}</div>
-      <div className={classes.newsThumb}>
+      <div className={classes.news_title}>{article.title}</div>
+      <div className={classes.news_thumb}>
         <img src={article.urlToImage} alt={article.title} />
       </div>
-      <div className={classes.newsCon}>
+      <div className={classes.news_con}>
         <p>{article.description}</p>
       </div>
     </section>
