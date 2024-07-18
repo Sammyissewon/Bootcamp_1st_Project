@@ -9,11 +9,13 @@ import Subscribe from "./Components/hb/Subscribe";
 import SignupForm from "./Components/hb/SignupForm";
 import Modal from "./Components/sm/Modal";
 import Footer from "./Components/sm/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
     <BrowserRouter>
       {/* 꼭 Router 안에 선언해줘야함 */}
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
