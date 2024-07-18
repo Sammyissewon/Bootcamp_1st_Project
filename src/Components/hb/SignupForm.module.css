@@ -1,26 +1,47 @@
-.signup-form {
+/* Header */
+.header {
+  text-align: center;
+  padding-top: 4.25rem;
+  font-size: 3.7rem;
+  font-weight: 800;
+}
+.message {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 1.7rem;
+  padding-top: 1.2rem;
+}
+
+.login {
+  font-size: 0.99rem;
+  color: #007bff; /* 파란색으로 텍스트 색상 설정 */
+  cursor: pointer; /* 클릭 가능하도록 커서 변경 */
+  /*text-decoration: underline;  밑줄 추가, 필요에 따라 제거 가능 */
+}
+
+.signupForm {
   padding: 20px;
 }
 
-.form-group {
+.formGroup {
   margin-left: 20rem;
   margin-bottom: 1rem;
   padding-bottom: 1.5rem;
 }
 
-.form-group input {
-  width: 25%;
+.formGroup input {
+  width: 29%;
   padding: 12px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccccccd3;
 }
 
-.form-group input:hover {
+.formGroup input:hover {
   border: none;
-  border-bottom: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2bc7;
 }
 
-.form-group input:focus {
+.formGroup input:focus {
   outline: none;
   border: none;
   border-bottom: 1px solid blue;
@@ -66,19 +87,79 @@
   font-size: 16px;
 }
 
-.submit-button {
+.submitBtn {
   width: 7.5rem;
   height: 2.5rem;
+  margin-top: 0.8rem;
   margin-left: 20rem;
   background-color: white;
   font-size: 16px;
-  color: rgb(97, 97, 252);
-  border: 0.5px solid rgb(177, 177, 254);
+  color: rgb(17, 75, 250);
+  border: 0.25px solid rgba(122, 158, 255, 0.863);
   border-radius: 20px;
   cursor: pointer;
 }
 
-.submit-button:hover {
-  background-color: rgb(17, 111, 227);
+.submitBtn:hover {
+  background-color: rgb(17, 75, 250);
   color: white;
+}
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100%;
+}
+
+.lines {
+  width: 1px;
+  height: 8rem; 
+  background-color: #ccccccd3; 
+  margin-left: 5vw;
+  
+}
+
+
+.textMiddle {
+  margin-left: 20vw;
+  margin-bottom: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.textBottom {
+  background-color: white; 
+  padding: 0 10px; 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  bottom: 0;
+  transform: translate(-50%, 50%); */
+
+.facebookBtn {
+  background-color: #3c5998;
+  color: white;
+  border: 1px solid #3c5998;
+}
+
+/* Footer 부분 */
+
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.78rem;
+  color: rgb(83, 83, 83);
+  line-height: 170%;
+}
+
+.line {
+  /* border-bottom: 1.3px solid  rgb(104, 104, 105); */
+  cursor: pointer; /* 클릭 가능하도록 커서 변경 */
+  text-decoration: underline;
+}
+
+.line:hover {
+  color: #007bff;
 }
