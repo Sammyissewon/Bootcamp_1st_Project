@@ -48,10 +48,17 @@ const Latest = () => {
         <>
           <Link to="/news/1">
             <div className={classes.latestThumb}>
-              <img src={secondArticle.urlToImage} alt={secondArticle.title} />
+              <img
+                src={
+                  secondArticle.urlToImage
+                    ? secondArticle.urlToImage
+                    : "../assets/news-image.webp"
+                }
+                alt={secondArticle.title}
+              />
             </div>
           </Link>
-          <div className={classes.latest_title}>
+          <div className={classes.latestTitle}>
             <Link to="/news/1">
               <div>{secondArticle.title}</div>
             </Link>
