@@ -12,7 +12,7 @@ const SignupForm = () => {
 
   return (
     <>
-      <div>
+      
         <form className={classes.signupForm} onSubmit={handleSubmit}>
           <div className={classes.header}>가입하기</div>
           <div className={classes.message}>
@@ -20,6 +20,8 @@ const SignupForm = () => {
             <span className={classes.login}>로그인</span>
             하세요.
           </div>
+
+        <div className={classes.group}>
           <div className={classes.formGroup}>
             <input
               type="email"
@@ -64,25 +66,26 @@ const SignupForm = () => {
           <button type="submit" className={classes.submitBtn}>
             가입하기
           </button>
+          </div>
         </form>
 
         <div className={classes.container}>
           <div className={classes.lines}>
-            <span className={classes.textTop}></span>
-            <span className={classes.textMiddle}>또는</span>
-            <span className={classes.textBottom}></span>
+            
+            <span className={classes.text}>또는</span>
+            
           </div>
         </div>
 
-        <div>
+        {/* <div className={classes.button}>
           <button className={classes.googleBtn}>
             Google 계정으로 계속하기
           </button>
           <button className={classes.facebookBtn}>
             Facebook 계정으로 계속하기
           </button>
-        </div>
-      </div>
+        </div> */}
+      
       <p className={classes.footer}>
         * 가입 시 Wix <span className={classes.line}>이용약관</span>에 동의하며{" "}
         <span className={classes.line}>개인정보처리방침</span>을 확인한 것으로

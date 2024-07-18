@@ -19,6 +19,7 @@
   margin-top: 5px;
   align-self: flex-start;
   font-size: 35px;
+  cursor: pointer;
 }
 
 .detailButton {
@@ -26,11 +27,13 @@
   font-size: 18px;
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 
 .mainImg {
   display: flex;
   max-width: 65%;
-
-  object-fit: cover; /* 이미지 비율을 유지하면서 크기에 맞춤 */
+  /* 이미지 비율을 유지하면서 크기에 맞춤 */
+  object-fit: cover;
+  cursor: pointer;
 }
