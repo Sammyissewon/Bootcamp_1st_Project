@@ -16,7 +16,7 @@ const SignupForm = () => {
     <>
       
         <form className={classes.signupForm} onSubmit={handleSubmit}>
-        <img src="/icon/wix.svg" alt="wix" />
+        <Link to={"/"}><img src="/icon/wix.svg" alt="wix" /></Link>
           <div className={classes.header}>가입하기</div>
           <div className={classes.message}>
             이미 사용 중인 계정이 있다면{" "}
