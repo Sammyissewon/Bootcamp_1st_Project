@@ -1,8 +1,8 @@
-import React from "react";
-import Share from "./Share";
+import React, { useState } from "react";
 import classes from "./NewsInfo.module.css";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import NewsInfoShare from "./NewsInfoShare";
 
 const NewsInfo = () => {
   // 현재 url에 있는 id 파라미터를 추출해서 id변수에 저장함
@@ -15,6 +15,9 @@ const NewsInfo = () => {
   // article 변수에 저장하고 기사의 세부 정보를 렌더링함
   const article = newsState[id];
 
+  // 공유하기 버튼 띄우기
+  const [popOpen, setPopOpen] = useState(false);
+
   // id에 해당하는 기사가 존재하지 않는 경우
   // 문구 띄우기
   if (!article) {
@@ -25,9 +28,14 @@ const NewsInfo = () => {
     <section className={classes.newsInfoWrapper}>
       <div className={classes.newsInfo}>
         <div className={classes.newsDate}>{article.publishedAt}</div>
-        <div className={classes.shareBtn}>
-          <img src="../assets/share.svg" alt="share-btn" />
-          <Share />
+        <div className={classes.shareBtnWrapper}>
+          <div
+            className={classes.shareMore}
+            onClick={() => setPopOpen(!popOpen)}
+          >
+            <img src="../assets/share.svg" alt="share-btn" />
+          </div>
+          <NewsInfoShare popOpen={popOpen} setPopOpen={setPopOpen} />
         </div>
       </div>
       <div className={classes.newsTitle}>{article.title}</div>

@@ -4,6 +4,13 @@
 .newsInfoWrapper {
   padding: 0 5%;
 }
+
+@media screen and (max-width: 1300px) {
+  .newsInfoWrapper {
+    padding: 0 13%;
+  }
+}
+
 /***************************************
  *	날짜
  */
@@ -17,13 +24,19 @@
 /***************************************
  *	공유 버튼
  */
-.shareBtn {
-  width: 19px;
-  height: 19px;
+.shareBtnWrapper {
+  position: relative;
 }
 
-.newsInfo .share_btns {
-  display: none;
+/* ... 메뉴 */
+.shareMore {
+  width: 19px;
+  height: 19px;
+  /* padding으로 주면 이미지가 너무 작아짐 */
+  border: 5px solid transparent;
+  /* border를 width, height에 포함 안함 */
+  box-sizing: content-box;
+  cursor: pointer;
 }
 
 /***************************************

@@ -27,20 +27,35 @@ button {
  *	상세페이지 전체
  */
 .newsDetailWrapper {
-  width: 55%;
-  margin: 10% auto;
-  /* border: 1px solid #ff0000; */
+  width: 1000px;
+  margin: 0 auto;
   padding: 3% 0;
   display: flex;
   justify-content: space-between;
   align-items: start;
+  font-family: "Nanum Gothic";
 }
 
 .newsDetail {
-  width: 60%;
+  width: 65%;
 }
 
 .newsDetailAside {
-  width: 25%;
+  width: 250px;
   padding-right: 3%;
+}
+
+@media screen and (max-width: 1300px) {
+  .newsDetailWrapper {
+    width: 100%;
+  }
+
+  .newsDetail {
+    width: 70%;
+  }
+
+  .newsDetailAside {
+    width: 30%;
+    padding-right: 10%;
+  }
 }
