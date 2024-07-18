@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./Components/sm/Header";
 import Main from "./Page/Main";
 import NewsDetail from "./Components/NewsDetail/NewsDetail";
@@ -13,15 +13,17 @@ import ScrollToTop from "./ScrollToTop";
 import Login from "./Components/hb/Login";
 
 const App = () => {
+  const location = useLocation();
+  const noHeaderPages = ["/SignupForm", "/Subscribe", "/Login"];
+
   return (
-    <BrowserRouter>
+    <>
       {/* 꼭 Router 안에 선언해줘야함 */}
       <ScrollToTop />
-      <Header />
+      {!noHeaderPages.includes(location.pathname) && <Header />}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/news/:id" element={<NewsDetail />} />
-        {/* 07-18 */}
         <Route path="/Section/:category" element={<Section />} />
         <Route path="/Subscribe" element={<Subscribe />} />
         <Route path="/SignupForm" element={<SignupForm />} />
@@ -30,8 +32,14 @@ const App = () => {
       </Routes>
       <Footer />
       <Modal />
-    </BrowserRouter>
+    </>
   );
 };
 
-export default App;
+const Root = () => (
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+
+export default Root;
