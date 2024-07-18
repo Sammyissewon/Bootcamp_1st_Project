@@ -40,7 +40,7 @@ const Latest = () => {
         // 최근게시물에 두번째 게시물 띄우기
         <>
           <Link to="/news/1">
-            <div className={classes.latest_thumb}>
+            <div className={classes.latestThumb}>
               <img src={secondArticle.urlToImage} alt={secondArticle.title} />
             </div>
           </Link>
