@@ -7,7 +7,7 @@ const Login = () => {
 
   return (
     <div className={classes.main}>
-      <img src="/icon/wix.svg" alt="wix" />
+      <Link to={"/"}><img src="/icon/wix.svg" alt="wix" /></Link>
       <div className={classes.header}>로그인</div>
       <div className={classes.message}>
         아직 계정이 없으신가요?

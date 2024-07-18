@@ -14,11 +14,12 @@
   
   .header {
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-right: 1rem;
     font-size: 3.5rem;
-    font-weight: 800;
-    letter-spacing: 0.3rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    
   }
   
   .message {
@@ -103,7 +104,7 @@
     padding: 10px;
     font-size: 16px;
     color: rgb(17, 75, 250);
-    border: 0.25px solid rgba(167, 189, 250, 0.705);
+    border: 0.25px solid rgba(190, 220, 255, 0.705);
     border-radius: 20px;
     cursor: pointer;
     letter-spacing: 0.05rem;
@@ -120,19 +121,20 @@
     background-color: #e6e4e4b5;
     position: absolute;
     top: 48%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
   }
   
   .text {
     position: absolute;
     top: 48%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
     z-index: 1;
-    font-size: small;
+    font-family: sans-serif;
+    font-size: 0.9rem;
     color: #494949;
   }
   
