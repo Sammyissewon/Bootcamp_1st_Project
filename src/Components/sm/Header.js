@@ -42,7 +42,7 @@ const Header = () => {
           <span>Sports</span>
         </Link>
         <img
-          src="icon/search.svg"
+          src="/icon/search.svg"
           alt="search"
           className={classes.searchIcon}
         />
