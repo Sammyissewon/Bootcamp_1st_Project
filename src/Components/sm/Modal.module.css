@@ -12,6 +12,10 @@
   transform: translateY(100%);
 }
 
+.modal.show {
+  transform: translateY(0);
+}
+
 .modal span {
   font-size: 30px;
   font-weight: bold;
@@ -29,8 +33,4 @@
 
 .modal img {
   width: 25px;
-}
-
-.modal.show {
-  transform: translateY(0);
 }

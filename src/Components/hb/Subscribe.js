@@ -28,7 +28,7 @@ const Subscribe = () => {
         <br />
         츠를 메일로 편하게 받아보실 수 있습니다.
       </div>
-      <form onSubmit={handleSubmit} className={classes.formContainer}>
+      <form onSubmit={handleSubmit}>
         <input
           type="email"
           placeholder=" 이메일 주소를 입력해 주세요"
