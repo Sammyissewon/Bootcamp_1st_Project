@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Subscribe.module.css";
+import { Link } from "react-router-dom";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -18,6 +19,7 @@ const Subscribe = () => {
 
   return (
     <div className={classes.subscribe}>
+      <div className={classes.main} >
       <div className={classes.head}>
         Wix 블로그
         <br />
@@ -41,6 +43,8 @@ const Subscribe = () => {
           구독 신청
         </button>
       </form>
+      </div>
+      <Link to={"/"}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -55,8 +59,9 @@ const Subscribe = () => {
           d="M6 18 18 6M6 6l12 12"
         />
       </svg>
+      </Link>
 
-      {/* <img src="icon/delete.svg" alt="" className={classes.delete} /> */}
+      
     </div>
   );
 };
