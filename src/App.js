@@ -15,12 +15,14 @@ import Login from "./Components/hb/Login";
 const App = () => {
   const location = useLocation();
   const noHeaderPages = ["/SignupForm", "/Subscribe", "/Login"];
+  const noFooterPages = ["/SignupForm", "/Login"];
 
   return (
     <>
       {/* 꼭 Router 안에 선언해줘야함 */}
       <ScrollToTop />
       {!noHeaderPages.includes(location.pathname) && <Header />}
+      {!noFooterPages.includes(location.pathname) && <Footer />}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/news/:id" element={<NewsDetail />} />
@@ -30,7 +32,7 @@ const App = () => {
         <Route path="/Login" element={<Login />} />
         {/* <Route path="/Modal" element={<Modal />} /> */}
       </Routes>
-      <Footer />
+      
       <Modal />
     </>
   );
