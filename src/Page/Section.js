@@ -22,11 +22,10 @@ const Section = () => {
         currentPage={currentPage}
         onPageChange={handlePageChange}
       />
+
       <div className={classes.sectionBottomText}>
-        <p>
-          본 블로그는 <span className={classes.customBold}>Wix Blog</span>로
-          제작되었습니다.
-        </p>
+        본 블로그는 <span className={classes.customBold}>Wix Blog</span>로
+        제작되었습니다.
       </div>
     </>
   );

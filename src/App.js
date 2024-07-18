@@ -7,6 +7,7 @@ import NewsDetail from "./Components/NewsDetail/NewsDetail";
 import Section from "./Page/Section";
 import Subscribe from "./Components/hb/Subscribe";
 import SignupForm from "./Components/hb/SignupForm";
+import Modal from "./Components/sm/Modal";
 import Footer from "./Components/sm/Footer";
 
 const App = () => {
@@ -20,8 +21,10 @@ const App = () => {
         <Route path="/Section" element={<Section />} />
         <Route path="/Subscribe" element={<Subscribe />} />
         <Route path="/SignupForm" element={<SignupForm />} />
+        {/* <Route path="/Modal" element={<Modal />} /> */}
       </Routes>
       <Footer />
+      <Modal />
     </BrowserRouter>
   );
 };
