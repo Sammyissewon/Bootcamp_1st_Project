@@ -53,7 +53,7 @@ const Latest = () => {
           </Link>
           <div className={classes.latest_title}>
             <Link to="/news/1">
-              <div>{latestArticle.title}</div>
+              <div>{secondArticle.title}</div>
             </Link>
           </div>
         </>
