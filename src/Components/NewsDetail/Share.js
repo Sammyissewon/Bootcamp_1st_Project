@@ -1,10 +1,22 @@
 import React from "react";
 import classes from "./Share.module.css";
 
-const Share = () => {
+const Share = ({
+  classBtns,
+  classFacebook,
+  classX,
+  classLinkedin,
+  classUrl,
+}) => {
+  console.log(classBtns, classFacebook, classX, classLinkedin, classUrl);
+
   return (
-    <div className={classes.shareBtns}>
-      <button className={classes.shareFacebook}>
+    <div className={`${classes.shareBtns} ${classBtns ? classBtns : ""}`}>
+      <button
+        className={`${classes.shareFacebook} ${
+          classFacebook ? classFacebook : ""
+        }`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="19"
@@ -15,7 +27,7 @@ const Share = () => {
           <path d="M8.08865986,17 L8.08865986,10.2073504 L5.7890625,10.2073504 L5.7890625,7.42194226 L8.08865986,7.42194226 L8.08865986,5.08269399 C8.08865986,3.38142605 9.46779813,2.00228778 11.1690661,2.00228778 L13.5731201,2.00228778 L13.5731201,4.50700008 L11.8528988,4.50700008 C11.3123209,4.50700008 10.874068,4.94525303 10.874068,5.48583089 L10.874068,7.42198102 L13.5299033,7.42198102 L13.1628515,10.2073892 L10.874068,10.2073892 L10.874068,17 L8.08865986,17 Z"></path>
         </svg>
       </button>
-      <button className={classes.shareX}>
+      <button className={`${classes.shareX} ${classX ? classX : ""}`}>
         <svg
           width="19"
           height="19"
@@ -27,7 +39,11 @@ const Share = () => {
         </svg>
         <span class="NHVyAh"></span>
       </button>
-      <button className={classes.shareLinkedin}>
+      <button
+        className={`${classes.shareLinkedin} ${
+          classLinkedin ? classLinkedin : ""
+        }`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="19"
@@ -39,7 +55,7 @@ const Share = () => {
         </svg>
         <span class="NHVyAh"></span>
       </button>
-      <button className={classes.shareUrl}>
+      <button className={`${classes.shareUrl} ${classUrl ? classUrl : ""}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="19"
