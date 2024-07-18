@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import classes from "./SignupForm.module.css";
+import { Link } from "react-router-dom";
+
 
 const SignupForm = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +20,8 @@ const SignupForm = () => {
           <div className={classes.header}>가입하기</div>
           <div className={classes.message}>
             이미 사용 중인 계정이 있다면{" "}
-            <span className={classes.login}>로그인</span>
+            <Link to={"/Login"}>
+            <span className={classes.login}>로그인</span></Link>
             하세요.
           </div>
 
@@ -70,7 +73,7 @@ const SignupForm = () => {
           </div>
         </form>
 
-        {/* <div className={classes.container}></div> */}
+        
         <span className={classes.text}>또는</span>
 
         <div className={classes.lines}></div>

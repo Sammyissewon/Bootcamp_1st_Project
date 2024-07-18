@@ -117,14 +117,6 @@
   color: white;
 }
 
-/* .container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-} */
 
 .lines {
   width: 1px;
@@ -151,6 +143,7 @@
 .button {
   display: grid;
   margin-left: 60rem;
+  cursor: pointer;
 }
 
 .googleBtn {
