@@ -26,7 +26,7 @@ const NewsInfoShare = ({ popOpen, setPopOpen }) => {
       >
         <div>
           <span>
-            <img src="/assets/share-arrow.svg" />
+            <img src="/assets/share-arrow.svg" alt="share-arrow" />
           </span>
           공유
         </div>
