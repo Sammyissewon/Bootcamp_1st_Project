@@ -33,15 +33,17 @@ const Main = () => {
                 <button className={classes.detailButton}>자세히 보기</button>
               </Link>
             </div>
-            <img
-              src={
-                mainArticle.urlToImage
-                  ? mainArticle.urlToImage
-                  : "../assets/news-image.webp"
-              }
-              className={classes.mainImg}
-              alt="main img"
-            />
+
+            {/* Link로 대체이미지를 싸면, CSS 적용을 방해하기 때문에 imgWrapper로 Link를 한번 더 감쌈 */}
+            <div className={classes.imgWrapper}>
+              <Link to="/news/0">
+                <img
+                  src={mainArticle.urlToImage || "/assets/news-image.webp"}
+                  className={classes.mainImg}
+                  alt="main img"
+                />
+              </Link>
+            </div>
           </>
         ) : (
           <div>로딩 중...</div>
