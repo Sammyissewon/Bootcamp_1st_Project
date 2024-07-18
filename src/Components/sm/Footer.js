@@ -94,6 +94,24 @@ const Footer = () => {
           <span>© 2006-2024 Wix.com, Inc</span>
         </div>
       </div>
+
+      <div className={classes.mainBottomText}>
+        <p>
+          본 블로그는 <span className={classes.customBold}>Wix Blog</span>로
+          제작되었습니다.
+        </p>
+      </div>
+
+      {/* .mainBottomText {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.customBold {
+  font-weight: bold;
+} */}
     </>
   );
 };

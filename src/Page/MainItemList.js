@@ -5,16 +5,17 @@ import classes from "./MainItemList.module.css";
 // components
 import Item from "../Components/sw/Item"; // Item 컴포넌트를 불러옴
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setNews } from "../store/news-data";
 
-const MainItemList = () => {
+const MainItemList = ({ category }) => {
   // 뉴스 API 불러오기
   // 불러온 기사 State 보관
   // const [articles, setArticles] = useState([]);
   // 데이터를 받아야할 곳에 사용
   // action과 관련된 값을 인자로 넣어서 보내줌
   const dispatch = useDispatch();
+  const articles = useSelector((state) => state.news.newsState);
 
   // 시간표시 형식
   const formatDate = (isoString) => {
@@ -28,7 +29,7 @@ const MainItemList = () => {
   };
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=kr&apiKey=${process.env.REACT_APP_API_KEY}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=kr&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`;
 
     fetch(url)
       .then((response) => {
@@ -47,27 +48,23 @@ const MainItemList = () => {
         dispatch(setNews(formattedArticles));
       });
     // }, []);
-  }, [dispatch]);
+  }, [dispatch, category]);
 
   return (
     <>
       <div className={classes.gridContainer}>
-        <Item />
-        {/* {articles.map((news, index) => {
-          return (
-            // fetch 해온 source의 Key값을 활용하여, Props로 전달
-            <Item
-              key={index}
-              title={news.title}
-              src={news.urlToImage} // 이미지
-              date={news.publishedAt} // 출간일자
-              author={news.author} // 글쓴이
-              source={news.source.name} // 언론사
-              content={news.content} // 컨텐츠
-              url={news.url} // URL
-            />
-          );
-        })} */}
+        {articles.map((news, index) => (
+          <Item
+            key={index}
+            title={news.title}
+            src={news.urlToImage}
+            date={news.publishedAt}
+            author={news.author}
+            source={news.source.name}
+            content={news.content}
+            url={`/news/${index}`}
+          />
+        ))}
       </div>
     </>
   );
