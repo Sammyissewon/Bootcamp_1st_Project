@@ -24,7 +24,9 @@ const Main = () => {
     <div>
       <div className={classes.upperSide}>
         <div className={classes.leftSide}>
-          <h4 className={classes.mainArticle}>{mainArticle.title}</h4>
+          <Link to="/news/0">
+            <h4 className={classes.mainArticle}>{mainArticle.title}</h4>
+          </Link>
           <Link to="/news/0">
             <button className={classes.detailButton}>자세히 보기 </button>
           </Link>
