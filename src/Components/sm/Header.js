@@ -7,7 +7,11 @@ const Header = () => {
     <>
       <div className={classes.titleBox}>
         <Link to={"/"}>
-          <img src="icon/wixblog.svg" alt="wixblog" className={classes.title} />
+          <img
+            src="/icon/wixblog.svg"
+            alt="wixblog"
+            className={classes.title}
+          />
         </Link>
         <div>
           <Link to={"/Subscribe"}>
@@ -19,23 +23,23 @@ const Header = () => {
         </div>
       </div>
       <div className={classes.nav}>
-        <Link to={"/Section"}>
-          <span>온라인 쇼핑몰</span>
+        <Link to="/Section/general">
+          <span>General</span>
         </Link>
-        <Link to={"/Section"}>
-          <span>온라인 마케팅</span>
+        <Link to="/Section/business">
+          <span>Business</span>
         </Link>
-        <Link to={"/Section"}>
-          <span>웹 디자인</span>
+        <Link to="/Section/entertainment">
+          <span>Entertainment</span>
         </Link>
-        <Link to={"/Section"}>
-          <span>비지니스 팀</span>
+        <Link to="/Section/health">
+          <span>Health</span>
         </Link>
-        <Link to={"/Section"}>
-          <span>예술 & 포토그래피</span>
+        <Link to="/Section/science">
+          <span>Science</span>
         </Link>
-        <Link to={"/Section"}>
-          <span>Wix 업데이트 및 사용방법</span>
+        <Link to="/Section/sports">
+          <span>Sports</span>
         </Link>
         <img
           src="icon/search.svg"
