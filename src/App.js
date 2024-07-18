@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/sm/Header";
+import Header from "./Components/sm/Header";
 import Main from "./Page/Main";
-import NewsDetail from "./components/NewsDetail/NewsDetail";
+import NewsDetail from "./Components/NewsDetail/NewsDetail";
 import Section from "./Page/Section";
-import Subscribe from "./components/hb/Subscribe";
-import Footer from "./components/sm/Footer";
+import Subscribe from "./Components/hb/Subscribe";
+import Footer from "./Components/sm/Footer";
 
 const App = () => {
   return (
