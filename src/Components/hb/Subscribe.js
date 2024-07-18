@@ -18,30 +18,45 @@ const Subscribe = () => {
 
   return (
     <div className={classes.subscribe}>
-      <div className="head">
+      <div className={classes.head}>
         Wix 블로그
         <br />
         이메일로 구독하세요!
       </div>
-      <div className="sub">
+      <div className={classes.sub}>
         Wix 홈페이지 제작 및 마케팅에 관한 새로운 콘텐
         <br />
         츠를 메일로 편하게 받아보실 수 있습니다.
       </div>
-      <form onSubmit={handleSubmit} className="formContainer">
+      <form onSubmit={handleSubmit} className={classes.formContainer}>
         <input
           type="email"
           placeholder=" 이메일 주소를 입력해 주세요"
-          className="email-input"
+          className={classes.emailInput}
           value={email}
           onChange={handleInputChange}
           required
         />
-        <button type="submit" className="subscribe-btn">
+        <button type="submit" className={classes.subscribeBtn}>
           구독 신청
         </button>
       </form>
-      <img src="icon/delete.svg" alt="" className={classes.delete} />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        className={classes.delete}
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </svg>
+
+      {/* <img src="icon/delete.svg" alt="" className={classes.delete} /> */}
     </div>
   );
 };
