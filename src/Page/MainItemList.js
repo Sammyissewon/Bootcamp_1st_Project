@@ -7,6 +7,7 @@ import Item from "../Components/sw/Item"; // Item 컴포넌트를 불러옴
 
 import { useDispatch, useSelector } from "react-redux";
 import { setNews } from "../store/news-data";
+import axios from "axios";
 
 const MainItemList = ({ category }) => {
   // 뉴스 API 불러오기
@@ -31,25 +32,22 @@ const MainItemList = ({ category }) => {
   useEffect(() => {
     let url = `https://newsapi.org/v2/top-headlines?country=kr&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`;
 
-    fetch(url)
+    axios
+      .get(url)
       .then((response) => {
-        if (!response.ok) {
-          throw new Error("");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        const formattedArticles = data.articles.map((article) => ({
+        const formattedArticles = response.data.articles.map((article) => ({
           ...article,
           publishedAt: formatDate(article.publishedAt),
-          // 카테고리 값을 포함시킴
           category: category,
         }));
-        // setArticles(formattedArticles);
-        // dispatch(setNews(data.articles)
         dispatch(setNews(formattedArticles));
+      })
+      .catch((error) => {
+        console.error(
+          "There has been a problem with your fetch operation:",
+          error
+        );
       });
-    // }, []);
   }, [dispatch, category]);
 
   return (
