@@ -30,24 +30,23 @@ const MainItemList = ({ category }) => {
   };
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=kr&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`;
-
-    axios
-      .get(url)
-      .then((response) => {
+    const fetchNews = async () => {
+      try {
+        const response = await axios.get(`/.netlify/functions/news`, {
+          params: { category },
+        });
         const formattedArticles = response.data.articles.map((article) => ({
           ...article,
           publishedAt: formatDate(article.publishedAt),
           category: category,
         }));
         dispatch(setNews(formattedArticles));
-      })
-      .catch((error) => {
-        console.error(
-          "There has been a problem with your fetch operation:",
-          error
-        );
-      });
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    };
+
+    fetchNews();
   }, [dispatch, category]);
 
   return (
